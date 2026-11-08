@@ -1,0 +1,45 @@
+schema_version: "0.1.0"
+
+metadata:
+  name: "Ethanol"
+  units:
+    distance: "angstroms"
+
+atoms:
+  - id: 0
+    symbol: "C"
+    coordinates: [-1.254000, 0.061000, 0.000000] # C1 (Methyl)
+  - id: 1
+    symbol: "C"
+    coordinates: [0.207000, -0.329000, 0.000000] # C2 (Methylene)
+  - id: 2
+    symbol: "O"
+    coordinates: [0.938000, 0.887000, 0.000000] # Hydroxyl Oxygen
+  - id: 3
+    symbol: "H"
+    coordinates: [1.898000, 0.745000, 0.000000] # Hydroxyl Hydrogen
+  - id: 4
+    symbol: "H"
+    coordinates: [-1.559000, 0.638000, 0.882000] # Methyl H
+  - id: 5
+    symbol: "H"
+    coordinates: [-1.559000, 0.638000, -0.882000] # Methyl H
+  - id: 6
+    symbol: "H"
+    coordinates: [-1.820000, -0.869000, 0.000000] # Methyl H
+  - id: 7
+    symbol: "H"
+    coordinates: [0.443000, -0.932000, 0.882000] # Methylene H
+  - id: 8
+    symbol: "H"
+    coordinates: [0.443000, -0.932000, -0.882000] # Methylene H
+
+bonds:
+  - [0, 1] # C1 - C2
+  - [1, 2] # C2 - O
+  - [2, 3] # O - H (hydroxyl)
+  - [0, 4] # C1 - H
+  - [0, 5] # C1 - H
+  - [0, 6] # C1 - H
+  - [1, 7] # C2 - H
+  - [1, 8] # C2 - H

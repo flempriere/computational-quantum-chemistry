@@ -1,0 +1,21 @@
+schema_version: "0.1.0"
+
+metadata:
+  name: "Water"
+  units:
+    distance: "angstroms"
+
+atoms:
+  - id: 0
+    symbol: "O"
+    coordinates: [0.000000, 0.000000, 0.117300]
+  - id: 1
+    symbol: "H"
+    coordinates: [0.000000, 0.757200, -0.469200]
+  - id: 2
+    symbol: "H"
+    coordinates: [0.000000, -0757200, -0.469200]
+
+bonds:
+  - [0, 1]
+  - [0, 2]
